@@ -74,15 +74,4 @@
     startAuto();
   }
 
-  var reviewRotator = document.querySelector("[data-review-rotator]");
-  if (reviewRotator) {
-    var reviews = reviewRotator.querySelectorAll(".hero-review");
-    var activeIndex = 0;
-
-    setInterval(function () {
-      reviews[activeIndex].classList.remove("is-active");
-      activeIndex = (activeIndex + 1) % reviews.length;
-      reviews[activeIndex].classList.add("is-active");
-    }, 5000);
-  }
 })();

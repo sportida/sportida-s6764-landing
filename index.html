@@ -6,14 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sportida Landing Base</title>
     <meta name="description" content="Static landing page base for Sportida, prepared for Hostinger deployment without Shopify dependencies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <div class="announcement-bar" aria-label="Announcement">
+      <div class="announcement-track">
+        <span>FREE SHIPPING ON AMAZON | MULTI-SPORT PROTECTION | BUILT FOR REAL TRAINING | TRUSTED BY ATHLETES</span>
+        <span aria-hidden="true">FREE SHIPPING ON AMAZON | MULTI-SPORT PROTECTION | BUILT FOR REAL TRAINING | TRUSTED BY ATHLETES</span>
+      </div>
+    </div>
     <header class="site-header" id="top">
       <div class="container header-inner">
         <a class="brand" href="#top">
-          <img src="images/Logo-Sportida.co.png" alt="Sportida" width="44" height="44">
-          <span>Sportida</span>
+          <img src="images/Logo-Sportida.co.png" alt="Sportida" width="180" height="56">
         </a>
 
         <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle menu">
@@ -32,34 +40,21 @@
 
         <main>
       <!-- 1. Hero -->
-      <section id="hero" class="section hero-sportida">
+      <section id="hero" class="section hero hero-sportida">
         <div class="container hero-container">
           <div class="hero-copy hero-left">
-            <p class="eyebrow">SPORTIDA MULTI-SPORT PROTECTION</p>
+            <p class="eyebrow">ERGONOMIC SEGMENTED PADDING DESIGN</p>
             <h1>Sportida S6764<br>Multi-Sport Knee Pads</h1>
             <p>Reliable knee protection for friction-heavy training, sliding drills, and real sports environments.</p>
-            <a class="btn hero-cta" href="#" aria-label="Buy Sportida S6764 Multi-Sport Knee Pads on Amazon">Buy on Amazon</a>
-
-            <div class="hero-reviews" data-review-rotator aria-live="polite">
-              <article class="hero-review is-active">
-                <p class="hero-review-stars">⭐⭐⭐⭐⭐</p>
-                <p class="hero-review-quote">"When you bend your knee, the pads bend with you instead of shifting."</p>
-                <p class="hero-review-author">Verified Amazon Customer</p>
-              </article>
-              <article class="hero-review">
-                <p class="hero-review-stars">⭐⭐⭐⭐⭐</p>
-                <p class="hero-review-quote">"The padding is dense but the pads feel lightweight and comfortable."</p>
-                <p class="hero-review-author">Verified Amazon Customer</p>
-              </article>
-              <article class="hero-review">
-                <p class="hero-review-stars">⭐⭐⭐⭐⭐</p>
-                <p class="hero-review-quote">"They stay in place during training and don't restrict movement."</p>
-                <p class="hero-review-author">Verified Amazon Customer</p>
-              </article>
-            </div>
-          </div>
+            <a class="btn hero-cta cta-button" href="#" aria-label="View Sportida S6764 Multi-Sport Knee Pads on Amazon">VIEW ON AMAZON &rarr;</a>          </div>
           <div class="hero-product">
-            <img src="images/sportida-s6764-knee-pads-1-pair-hero.jpg" alt="Sportida S6764 Multi-Sport Knee Pads designed for sliding and surface contact sports">
+            <img src="images/sportida-s6764-knee-pads-1-pair-hero.png" alt="Sportida S6764 Multi-Sport Knee Pads designed for sliding and surface contact sports">
+            <div class="hero-product-shadow"></div>
+            <div class="hero-review-card">
+              <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p class="review-text">"They stay in place during training and don't restrict movement."</p>
+              <span class="review-author">Verified Amazon Customer</span>
+            </div>
           </div>
           <div class="hero-right">
             <h2>Dense EVA impact support without heavy bulk.</h2>
@@ -157,4 +152,8 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
+
+
+
 
