@@ -19,6 +19,6 @@ jobs:
           server: 185.212.71.201
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 21
           protocol: ftp
+          port: 21
           server-dir: domains/sportida.store/public_html/s6764/
