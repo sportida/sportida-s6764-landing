@@ -241,6 +241,68 @@ p + p {
   object-fit: cover;
 }
 
+.section-real-training {
+  position: relative;
+  background:
+    linear-gradient(180deg, #07101f 0%, #091224 100%);
+  color: #f3f6ff;
+}
+
+.section-real-training-media {
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  overflow: hidden;
+}
+
+.section-real-training-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(6, 9, 20, 0.08) 0%, rgba(6, 9, 20, 0.24) 58%, rgba(6, 9, 20, 0.74) 100%);
+  pointer-events: none;
+}
+
+.section-real-training-media img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-real-training-content {
+  position: relative;
+  z-index: 1;
+  padding: 28px 0 72px;
+}
+
+.section-real-training-copy {
+  width: min(760px, 92vw);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-real-training-copy h2 {
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  line-height: 1.08;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.section-real-training-copy p {
+  max-width: 34ch;
+  margin: 0 auto;
+  font-size: clamp(1rem, 3.3vw, 1.18rem);
+  line-height: 1.72;
+  color: rgba(235, 241, 255, 0.88);
+}
+
+.section-real-training-copy p + p {
+  margin-top: 18px;
+}
+
 .hero-overlay {
   position: absolute;
   inset: auto 24px 24px 24px;
@@ -275,6 +337,29 @@ p + p {
 .hero-sportida {
   position: relative;
   padding: 120px 0 72px;
+  overflow: hidden;
+}
+
+.hero-sportida::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 74% 24%, rgba(255, 222, 176, 0.28) 0%, rgba(255, 222, 176, 0.12) 16%, rgba(255, 222, 176, 0) 38%),
+    radial-gradient(circle at 52% 48%, rgba(255, 244, 218, 0.16) 0%, rgba(255, 244, 218, 0.06) 22%, rgba(255, 244, 218, 0) 48%),
+    linear-gradient(90deg, rgba(4, 6, 14, 0.1) 0%, rgba(4, 6, 14, 0) 38%, rgba(255, 230, 190, 0.05) 72%, rgba(255, 230, 190, 0.08) 100%);
+  z-index: 0;
+}
+
+.hero-sportida::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 82% 18%, rgba(255, 235, 204, 0.18) 0%, rgba(255, 235, 204, 0.08) 12%, rgba(255, 235, 204, 0) 26%);
+  filter: blur(10px);
+  z-index: 0;
 }
 
 .hero-container {
@@ -287,6 +372,8 @@ p + p {
   gap: 30px;
   align-items: center;
   min-height: 560px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero-copy {
@@ -319,6 +406,16 @@ p + p {
   font-size: 1.08rem;
   font-weight: 600;
   letter-spacing: 0.01em;
+}
+
+.hero-model {
+  display: inline-block;
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .hero-cta {
@@ -365,26 +462,39 @@ p + p {
 }
 
 .hero-product::before {
-  top: -6%;
-  width: 620px;
-  height: 620px;
+  top: -10%;
+  width: 680px;
+  height: 680px;
   border-radius: 50%;
   background:
-    radial-gradient(circle, rgba(255, 255, 255, 0.98) 0%, rgba(255, 250, 232, 0.8) 16%, rgba(255, 243, 210, 0.42) 34%, rgba(255, 236, 204, 0.15) 54%, rgba(255, 236, 204, 0) 76%);
-  filter: blur(38px);
+    radial-gradient(circle, rgba(255, 252, 244, 1) 0%, rgba(255, 245, 220, 0.86) 14%, rgba(255, 236, 188, 0.46) 30%, rgba(255, 230, 182, 0.16) 52%, rgba(255, 236, 204, 0) 76%);
+  filter: blur(46px);
   z-index: 0;
   animation: glowPulse 6s ease-in-out infinite;
 }
 
 .hero-product::after {
-  top: 8%;
-  width: 760px;
-  height: 460px;
+  top: -2%;
+  width: 860px;
+  height: 520px;
   background:
-    radial-gradient(ellipse at center, rgba(255, 255, 255, 0.34) 0%, rgba(244, 240, 255, 0.22) 28%, rgba(235, 232, 255, 0.09) 52%, rgba(235, 232, 255, 0) 74%);
-  filter: blur(52px);
+    radial-gradient(ellipse at center, rgba(255, 248, 230, 0.4) 0%, rgba(250, 236, 214, 0.24) 26%, rgba(244, 236, 255, 0.09) 48%, rgba(235, 232, 255, 0) 72%);
+  filter: blur(60px);
   z-index: 0;
   animation: glowPulse 6s ease-in-out infinite;
+}
+
+.hero-product-visual::before {
+  content: "";
+  position: absolute;
+  inset: 10% 14% 18%;
+  z-index: 3;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 48% 28%, rgba(255, 248, 232, 0.34) 0%, rgba(255, 248, 232, 0.14) 18%, rgba(255, 248, 232, 0) 44%),
+    radial-gradient(circle at 58% 48%, rgba(162, 245, 255, 0.1) 0%, rgba(162, 245, 255, 0.04) 16%, rgba(162, 245, 255, 0) 34%);
+  mix-blend-mode: screen;
+  filter: blur(16px);
 }
 
 .hero-product-visual {
@@ -404,7 +514,10 @@ p + p {
   max-width: 470px;
   height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 26px 44px rgba(0, 0, 0, 0.34));
+  filter:
+    drop-shadow(0 18px 28px rgba(0, 0, 0, 0.2))
+    drop-shadow(0 34px 56px rgba(0, 0, 0, 0.26))
+    drop-shadow(0 0 18px rgba(255, 236, 204, 0.12));
   animation: heroProductFloat 6s ease-in-out infinite;
 }
 
@@ -415,8 +528,8 @@ p + p {
   height: 46px;
   margin: -26px auto 0;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.48);
-  filter: blur(28px);
+  background: rgba(0, 0, 0, 0.54);
+  filter: blur(32px);
   animation: shadowPulse 6s ease-in-out infinite;
 }
 
@@ -453,6 +566,10 @@ p + p {
   margin-bottom: 0;
 }
 
+.hero-conversion {
+  display: contents;
+}
+
 .hero-review-card {
   grid-area: review;
   justify-self: center;
@@ -473,6 +590,8 @@ p + p {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
   margin-bottom: 6px;
 }
 
@@ -481,6 +600,14 @@ p + p {
   font-size: 1.3rem;
   letter-spacing: 0.12em;
   text-shadow: 0 0 10px rgba(241, 213, 60, 0.1);
+}
+
+.hero-review-label {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .hero-review-slides {
@@ -748,6 +875,20 @@ p + p {
 }
 
 @media (max-width: 920px) {
+  body {
+    padding-top: 32px;
+  }
+
+  .announcement-bar {
+    height: 32px;
+  }
+
+  .announcement-track {
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    animation-duration: 20s;
+  }
+
   .feature-grid,
   .testimonial-grid,
   .split,
@@ -761,7 +902,7 @@ p + p {
 
   .main-nav {
     position: absolute;
-    top: 108px;
+    top: 92px;
     left: 0;
     right: 0;
     padding: 12px 4vw 18px;
@@ -777,20 +918,18 @@ p + p {
   }
 
   .hero-sportida {
-    padding: 64px 0;
-    background-position: center;
+    padding: 54px 0 56px;
+    background-position: 60% center;
   }
 
   .hero-container {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "product"
       "left"
-      "review"
-      "cta"
-      "right";
+      "product"
+      "conversion";
     min-height: 0;
-    gap: 18px;
+    gap: 20px;
     text-align: center;
   }
 
@@ -803,37 +942,53 @@ p + p {
     transform: none;
   }
 
+  .hero-copy {
+    max-width: 520px;
+  }
+
   .hero-copy .eyebrow {
     font-size: 0.88rem;
     letter-spacing: 0.01em;
+    line-height: 1.3;
+    max-width: none;
+    white-space: nowrap;
+    margin: 0 auto 12px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.4rem, 8vw, 3.4rem);
+    margin-bottom: 10px;
+  }
+
+  .hero-copy > p {
+    max-width: none;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero-model {
+    margin-top: 10px;
   }
 
   .hero-product {
     justify-self: center;
-    width: min(420px, 86vw);
+    width: min(400px, 82vw);
     transform: none;
-    order: -1;
   }
 
   .hero-product-visual {
-    width: min(100%, 360px);
+    width: min(100%, 320px);
   }
 
   .hero-product-image {
-    max-width: 360px;
+    max-width: 320px;
   }
 
   .hero-product-shadow {
-    width: 220px;
-    height: 40px;
-    margin-top: -20px;
-  }
-
-  .hero-review-card {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2px;
-    max-width: 300px;
+    width: 190px;
+    height: 32px;
+    margin-top: -16px;
   }
 
   .hero-cta-desktop {
@@ -842,10 +997,50 @@ p + p {
 
   .hero-cta-mobile-wrap {
     display: block;
+    justify-self: stretch;
   }
 
   .hero-cta-mobile {
     margin-top: 0;
+    min-width: min(320px, 84vw);
+    text-align: center;
+  }
+
+  .hero-conversion {
+    grid-area: conversion;
+    display: grid;
+    gap: 14px;
+    width: min(520px, 88vw);
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .hero-right,
+  .hero-review-card,
+  .hero-cta-mobile-wrap {
+    grid-area: auto;
+    justify-self: stretch;
+  }
+
+  .hero-right {
+    max-width: none;
+  }
+
+  .hero-right h2 {
+    font-size: clamp(1.15rem, 3.6vw, 1.45rem);
+    line-height: 1.12;
+    text-align: center;
+  }
+
+  .hero-review-card {
+    margin: 0;
+    max-width: none;
+    padding: 16px 16px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(70, 80, 151, 0.38) 0%, rgba(39, 18, 105, 0.42) 52%, rgba(205, 41, 146, 0.18) 100%);
+    box-shadow: 0 20px 44px rgba(18, 14, 48, 0.22);
+    backdrop-filter: blur(10px);
   }
 
   .hero-overlay {
@@ -856,5 +1051,226 @@ p + p {
 
   .hero-slide img {
     min-height: 300px;
+  }
+
+  .section-real-training-content {
+    padding: 28px 0 64px;
+  }
+
+  .section-real-training-copy h2 {
+    max-width: 12ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    padding-top: 30px;
+  }
+
+  .announcement-bar {
+    height: 30px;
+  }
+
+  .announcement-track {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .header-inner {
+    min-height: 62px;
+  }
+
+  .brand img {
+    height: 44px;
+  }
+
+  .menu-toggle {
+    width: 54px;
+    height: 54px;
+    border-radius: 16px;
+    background: rgba(8, 11, 28, 0.36);
+    backdrop-filter: blur(8px);
+  }
+
+  .main-nav {
+    top: 84px;
+  }
+
+  .hero-sportida {
+    padding: 68px 0 44px;
+    background-position: 62% center;
+  }
+
+  .hero-container {
+    gap: 22px;
+  }
+
+  .hero-copy {
+    max-width: 92vw;
+  }
+
+  .hero-copy .eyebrow {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    max-width: none;
+    margin: 0 auto 14px;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.05rem, 8.9vw, 3rem);
+    line-height: 1.06;
+  }
+
+  .hero-copy > p {
+    max-width: none;
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+
+  .hero-model {
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+  }
+
+  .cta-button {
+    padding: 16px 26px;
+    font-size: 15px;
+  }
+
+  .hero-product {
+    width: min(300px, 72vw);
+  }
+
+  .hero-product::before {
+    width: 460px;
+    height: 460px;
+    top: -8%;
+    filter: blur(30px);
+  }
+
+  .hero-product::after {
+    width: 560px;
+    height: 320px;
+    top: 8%;
+    filter: blur(44px);
+  }
+
+  .hero-product-visual {
+    width: min(100%, 260px);
+  }
+
+  .hero-product-image {
+    max-width: 260px;
+  }
+
+  .hero-product-shadow {
+    width: 150px;
+    height: 24px;
+    margin-top: -10px;
+    filter: blur(20px);
+  }
+
+  .hero-review-card {
+    max-width: none;
+    padding: 14px 14px 16px;
+    border-radius: 22px;
+  }
+
+  .hero-review-stars {
+    font-size: 1.15rem;
+  }
+
+  .hero-review-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.06em;
+  }
+
+  .hero-review-slides {
+    min-height: 70px;
+  }
+
+  .hero-review-slide p {
+    font-size: 0.76rem;
+    line-height: 1.34;
+  }
+
+  .hero-review-slide small {
+    margin-top: 6px;
+    font-size: 0.74rem;
+  }
+
+  .hero-right {
+    max-width: none;
+  }
+
+  .hero-right h2 {
+    font-size: clamp(1rem, 5vw, 1.2rem);
+    line-height: 1.15;
+  }
+
+  .hero-conversion {
+    width: min(360px, 90vw);
+    gap: 12px;
+    padding: 0;
+  }
+
+  .section-real-training-media img {
+    min-height: 54vw;
+  }
+
+  .section-real-training-content {
+    padding: 26px 0 56px;
+  }
+
+  .section-real-training-copy {
+    width: min(92vw, 36rem);
+  }
+
+  .section-real-training-copy h2 {
+    font-size: clamp(1.85rem, 8vw, 2.5rem);
+    max-width: 11ch;
+    margin-bottom: 16px;
+  }
+
+  .section-real-training-copy p {
+    max-width: 31ch;
+    font-size: 1rem;
+    line-height: 1.68;
+  }
+}
+
+@media (min-width: 921px) {
+  .section-real-training {
+    padding-bottom: 84px;
+  }
+
+  .section-real-training-media {
+    min-height: clamp(420px, 48vw, 700px);
+  }
+
+  .section-real-training-media::after {
+    background:
+      linear-gradient(180deg, rgba(5, 8, 18, 0.1) 0%, rgba(5, 8, 18, 0.16) 34%, rgba(5, 8, 18, 0.62) 100%),
+      linear-gradient(90deg, rgba(5, 8, 18, 0.68) 0%, rgba(5, 8, 18, 0.12) 42%, rgba(5, 8, 18, 0.44) 100%);
+  }
+
+  .section-real-training-media img {
+    height: clamp(420px, 48vw, 700px);
+  }
+
+  .section-real-training-content {
+    margin-top: -180px;
+    padding: 0 0 0;
+  }
+
+  .section-real-training-copy {
+    width: min(780px, 72vw);
+    padding: 38px 44px 0;
+  }
+
+  .section-real-training-copy p {
+    max-width: 44ch;
   }
 }
