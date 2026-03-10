@@ -248,6 +248,18 @@ p + p {
   color: #16233b;
 }
 
+.section-real-training::before {
+  content: "";
+  position: absolute;
+  top: -56px;
+  left: 0;
+  right: 0;
+  height: 88px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(233, 239, 244, 0.86) 58%, #e9eff4 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .section-real-training-media {
   position: relative;
   width: 100vw;
@@ -261,7 +273,7 @@ p + p {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(12, 18, 34, 0.03) 0%, rgba(12, 18, 34, 0.06) 52%, rgba(233, 239, 244, 0.24) 72%, rgba(233, 239, 244, 0.92) 100%);
+    linear-gradient(180deg, rgba(233, 239, 244, 0.94) 0%, rgba(12, 18, 34, 0.04) 18%, rgba(12, 18, 34, 0.06) 54%, rgba(233, 239, 244, 0.26) 74%, rgba(233, 239, 244, 0.94) 100%);
   pointer-events: none;
 }
 
@@ -313,9 +325,26 @@ p + p {
 }
 
 .section-impact-protection {
+  position: relative;
   background:
     linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%);
   padding: 60px 0;
+}
+
+.section-impact-protection::before,
+.section-multisport-performance::before,
+.section-mobility-fit::before,
+.section-size-guide::before,
+.section-final-amazon-cta::before {
+  content: "";
+  position: absolute;
+  top: -42px;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(248, 250, 255, 0.88) 62%, rgba(248, 250, 255, 1) 100%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .section-impact-protection-layout {
@@ -333,6 +362,8 @@ p + p {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 20px 48px rgba(17, 29, 58, 0.08);
 }
 
 .section-impact-protection-copy {
@@ -358,6 +389,7 @@ p + p {
 }
 
 .section-multisport-performance {
+  position: relative;
   background: #ffffff;
   padding: 96px 0;
 }
@@ -397,6 +429,8 @@ p + p {
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 22px 56px rgba(17, 29, 58, 0.12);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
 
 .section-multisport-performance-copy {
@@ -437,11 +471,12 @@ p + p {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--support-yellow) 0%, var(--support-magenta) 100%);
+  background: #271269;
   transform: translateY(-50%);
 }
 
 .section-mobility-fit {
+  position: relative;
   background: #ffffff;
   padding: 96px 0;
 }
@@ -457,6 +492,8 @@ p + p {
   width: min(100%, 620px);
   border-radius: 16px;
   box-shadow: 0 22px 56px rgba(17, 29, 58, 0.12);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
 
 .section-mobility-fit-copy h2 {
@@ -483,24 +520,32 @@ p + p {
 
 .section-mobility-fit-features li {
   position: relative;
-  padding-left: 22px;
+  padding: 16px 18px 16px 46px;
+  border: 1px solid rgba(39, 18, 105, 0.08);
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 248, 255, 0.94) 100%);
+  box-shadow: 0 12px 28px rgba(17, 29, 58, 0.05);
   font-weight: 600;
   color: #101d34;
+  line-height: 1.6;
+  text-align: left;
 }
 
 .section-mobility-fit-features li::before {
   content: "";
   position: absolute;
-  top: 0.75em;
-  left: 0;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--support-yellow) 0%, var(--support-magenta) 100%);
+  top: 50%;
+  left: 18px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: #1a114d;
+  box-shadow: 0 0 0 6px rgba(39, 18, 105, 0.08);
   transform: translateY(-50%);
 }
 
 .section-size-guide {
+  position: relative;
   background: #ffffff;
   padding: 96px 0;
 }
@@ -516,6 +561,8 @@ p + p {
   width: min(100%, 520px);
   border-radius: 16px;
   box-shadow: 0 22px 56px rgba(17, 29, 58, 0.12);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
 
 .section-size-guide-copy h2 {
@@ -610,6 +657,18 @@ p + p {
   pointer-events: none;
 }
 
+.section-amazon-reviews::after {
+  content: "";
+  position: absolute;
+  bottom: -34px;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(233, 239, 244, 0.86) 64%, #e9eff4 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .section-amazon-reviews-layout {
   position: relative;
   display: grid;
@@ -668,7 +727,7 @@ p + p {
   gap: 18px;
   width: max-content;
   padding-inline: 20px;
-  animation: amazon-review-scroll 44s linear infinite;
+  animation: amazon-review-scroll 68s linear infinite;
   will-change: transform;
 }
 
@@ -705,16 +764,18 @@ p + p {
   font-size: 0.98rem;
   line-height: 1.62;
   font-weight: 600;
+  text-align: center;
+  text-wrap: balance;
 }
 
 .amazon-review-buyer {
   margin: 0;
-  color: #8fffff;
+  color: #465097;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   font-weight: 700;
-  text-shadow: 0 1px 0 rgba(16, 29, 52, 0.16);
+  text-align: center;
 }
 
 @keyframes amazon-review-scroll {
@@ -838,9 +899,8 @@ p + p {
   height: 14px;
   margin-top: 0.35rem;
   border-radius: 50%;
-  background:
-    linear-gradient(135deg, var(--support-yellow) 0%, var(--support-magenta) 100%);
-  box-shadow: 0 0 0 6px rgba(70, 80, 151, 0.08);
+  background: #1a114d;
+  box-shadow: 0 0 0 6px rgba(39, 18, 105, 0.12);
 }
 
 .feature-item-copy h3 {
