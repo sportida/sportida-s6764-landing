@@ -500,6 +500,302 @@ p + p {
   transform: translateY(-50%);
 }
 
+.section-size-guide {
+  background: #ffffff;
+  padding: 96px 0;
+}
+
+.section-size-guide-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 44px;
+  align-items: center;
+}
+
+.section-size-guide-media img {
+  width: min(100%, 520px);
+  border-radius: 16px;
+  box-shadow: 0 22px 56px rgba(17, 29, 58, 0.12);
+}
+
+.section-size-guide-copy h2 {
+  font-size: clamp(2rem, 4.4vw, 3rem);
+  line-height: 1.08;
+  color: #101d34;
+  margin-bottom: 14px;
+}
+
+.section-size-guide-subhead {
+  max-width: 34ch;
+  margin-bottom: 16px;
+  font-size: clamp(1rem, 2vw, 1.08rem);
+  line-height: 1.7;
+  color: rgba(16, 29, 52, 0.78);
+}
+
+.section-size-guide-copy > p:last-child {
+  margin-top: 18px;
+}
+
+.section-size-guide-copy p {
+  max-width: 42ch;
+  font-size: clamp(1rem, 2vw, 1.08rem);
+  line-height: 1.76;
+  color: rgba(16, 29, 52, 0.8);
+}
+
+.section-size-guide-table-wrap {
+  margin-top: 28px;
+  overflow-x: auto;
+}
+
+.section-size-guide-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid rgba(70, 80, 151, 0.14);
+  border-radius: 18px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 12px 32px rgba(17, 29, 58, 0.06);
+}
+
+.section-size-guide-table th,
+.section-size-guide-table td {
+  padding: 16px 18px;
+  text-align: left;
+}
+
+.section-size-guide-table th {
+  background: #f6f8fc;
+  color: #101d34;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section-size-guide-table td {
+  color: rgba(16, 29, 52, 0.84);
+  font-weight: 600;
+}
+
+.section-size-guide-table tbody tr + tr td {
+  border-top: 1px solid rgba(70, 80, 151, 0.12);
+}
+
+.section-size-guide-tip {
+  max-width: 42ch;
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px solid rgba(70, 80, 151, 0.12);
+  border-radius: 14px;
+  background: #f8faff;
+}
+
+.section-athlete-benefits {
+  background: #f8f9fb;
+  padding: 104px 0;
+}
+
+.section-athlete-benefits-layout {
+  display: grid;
+  gap: 36px;
+}
+
+.section-athlete-benefits-head {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-athlete-benefits-head h2 {
+  font-size: clamp(2rem, 4.6vw, 3.1rem);
+  line-height: 1.08;
+  color: #101d34;
+  margin-bottom: 16px;
+}
+
+.section-athlete-benefits-head p {
+  max-width: 40ch;
+  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.08rem);
+  line-height: 1.74;
+  color: rgba(16, 29, 52, 0.76);
+}
+
+.section-athlete-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.section-athlete-benefit-card {
+  padding: 28px 24px;
+  border: 1px solid rgba(70, 80, 151, 0.1);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 16px 36px rgba(17, 29, 58, 0.05);
+  text-align: center;
+}
+
+.section-athlete-benefit-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, rgba(241, 213, 60, 0.18) 0%, rgba(205, 41, 146, 0.08) 100%);
+  border: 1px solid rgba(70, 80, 151, 0.12);
+  position: relative;
+}
+
+.section-athlete-benefit-icon::before,
+.section-athlete-benefit-icon::after {
+  content: "";
+  position: absolute;
+}
+
+.section-athlete-benefit-icon-protection::before {
+  width: 20px;
+  height: 24px;
+  border: 2px solid #101d34;
+  border-radius: 10px 10px 12px 12px;
+}
+
+.section-athlete-benefit-icon-protection::after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--support-yellow);
+}
+
+.section-athlete-benefit-icon-mobility::before {
+  width: 20px;
+  height: 20px;
+  border-top: 2px solid #101d34;
+  border-right: 2px solid #101d34;
+  transform: rotate(45deg);
+}
+
+.section-athlete-benefit-icon-mobility::after {
+  width: 18px;
+  height: 2px;
+  background: #101d34;
+  transform: rotate(-28deg);
+}
+
+.section-athlete-benefit-icon-fit::before {
+  width: 22px;
+  height: 16px;
+  border: 2px solid #101d34;
+  border-radius: 999px;
+}
+
+.section-athlete-benefit-icon-fit::after {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #101d34;
+}
+
+.section-athlete-benefit-card h3 {
+  font-size: 1.16rem;
+  line-height: 1.3;
+  color: #101d34;
+  margin-bottom: 10px;
+}
+
+.section-athlete-benefit-card p {
+  font-size: 0.98rem;
+  line-height: 1.68;
+  color: rgba(16, 29, 52, 0.76);
+}
+
+.section-final-amazon-cta {
+  padding: 108px 0;
+  background:
+    radial-gradient(circle at top center, rgba(241, 213, 60, 0.16) 0%, rgba(241, 213, 60, 0) 28%),
+    linear-gradient(180deg, #271269 0%, #1a114d 100%);
+  color: #f5f3ff;
+}
+
+.section-final-amazon-cta-layout {
+  max-width: 840px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+  text-align: center;
+}
+
+.section-final-amazon-cta-layout h2 {
+  font-size: clamp(2.15rem, 4.8vw, 3.6rem);
+  line-height: 1.06;
+  margin: 0;
+  color: #ffffff;
+}
+
+.section-final-amazon-cta-layout p {
+  max-width: 42ch;
+  font-size: clamp(1rem, 2.1vw, 1.12rem);
+  line-height: 1.76;
+  color: rgba(245, 243, 255, 0.82);
+}
+
+.section-final-amazon-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: min(100%, 360px);
+  padding: 18px 32px;
+  border-radius: 999px;
+  background: #f1d53c;
+  color: #1a114d;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 16px 34px rgba(10, 6, 32, 0.26);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.section-final-amazon-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 22px 40px rgba(10, 6, 32, 0.32);
+  background: #f6dd62;
+}
+
+.section-final-amazon-cta-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.section-final-amazon-cta-trust li {
+  position: relative;
+  padding-left: 24px;
+  color: rgba(245, 243, 255, 0.9);
+  font-weight: 600;
+}
+
+.section-final-amazon-cta-trust li::before {
+  content: "\2714";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  color: #f1d53c;
+  transform: translateY(-50%);
+}
+
 .feature-list {
   margin-top: 24px;
   display: grid;
@@ -1056,28 +1352,94 @@ p + p {
 }
 
 .site-footer {
-  background: #141d31;
+  background: #101d34;
   color: #e3ebff;
-  padding: 42px 0 22px;
+  padding: 72px 0 28px;
 }
 
 .footer-inner {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(180px, 0.85fr);
+  gap: 40px;
   align-items: flex-start;
 }
 
+.footer-brand {
+  display: grid;
+  gap: 10px;
+  max-width: 340px;
+}
+
+.footer-logo {
+  display: inline-flex;
+  width: fit-content;
+}
+
+.footer-logo img {
+  width: min(160px, 42vw);
+  height: auto;
+}
+
+.footer-brand h2 {
+  color: #ffffff;
+  font-size: clamp(2rem, 4vw, 2.55rem);
+  line-height: 1;
+}
+
+.footer-brand-line {
+  max-width: 34ch;
+  color: rgba(227, 235, 255, 0.82);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.footer-disclaimer {
+  max-width: 34ch;
+  color: rgba(227, 235, 255, 0.62);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
 .footer-links {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 18px;
+  justify-self: end;
+  align-content: start;
+  padding-top: 18px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }
 
 .copyright {
-  margin: 14px 0 0;
+  margin: 28px 0 0;
   text-align: center;
   color: #a5b3d7;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-brand {
+    justify-items: center;
+  }
+
+  .footer-links {
+    justify-items: center;
+    justify-self: center;
+    padding-top: 4px;
+  }
 }
 
 @keyframes ticker {
@@ -1354,6 +1716,27 @@ p + p {
     grid-template-columns: 1fr;
     gap: 28px;
   }
+
+  .section-size-guide {
+    padding: 80px 0;
+  }
+
+  .section-size-guide-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .section-athlete-benefits {
+    padding: 88px 0;
+  }
+
+  .section-athlete-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-final-amazon-cta {
+    padding: 92px 0;
+  }
 }
 
 @media (max-width: 640px) {
@@ -1604,6 +1987,93 @@ p + p {
   }
 
   .section-mobility-fit-features li {
+    text-align: left;
+  }
+
+  .section-size-guide {
+    padding: 68px 0;
+  }
+
+  .section-size-guide-layout {
+    gap: 24px;
+  }
+
+  .section-size-guide-copy {
+    text-align: center;
+  }
+
+  .section-size-guide-copy h2 {
+    font-size: clamp(1.85rem, 7.2vw, 2.4rem);
+  }
+
+  .section-size-guide-subhead,
+  .section-size-guide-copy p,
+  .section-size-guide-tip {
+    max-width: 31ch;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+  }
+
+  .section-size-guide-table th,
+  .section-size-guide-table td {
+    padding: 14px 14px;
+    font-size: 0.92rem;
+  }
+
+  .section-athlete-benefits {
+    padding: 72px 0;
+  }
+
+  .section-athlete-benefits-layout {
+    gap: 28px;
+  }
+
+  .section-athlete-benefits-head h2 {
+    font-size: clamp(1.85rem, 7.2vw, 2.4rem);
+  }
+
+  .section-athlete-benefits-head p,
+  .section-athlete-benefit-card p {
+    font-size: 1rem;
+  }
+
+  .section-athlete-benefit-card {
+    padding: 24px 20px;
+  }
+
+  .section-final-amazon-cta {
+    padding: 76px 0;
+  }
+
+  .section-final-amazon-cta-layout {
+    gap: 18px;
+  }
+
+  .section-final-amazon-cta-layout h2 {
+    font-size: clamp(1.95rem, 8vw, 2.75rem);
+  }
+
+  .section-final-amazon-cta-layout p {
+    max-width: 31ch;
+    font-size: 1rem;
+  }
+
+  .section-final-amazon-cta-button {
+    width: 100%;
+    min-width: 0;
+    padding: 17px 24px;
+    font-size: 0.96rem;
+  }
+
+  .section-final-amazon-cta-trust {
+    gap: 10px 0;
+    justify-content: flex-start;
+    width: min(100%, 320px);
+  }
+
+  .section-final-amazon-cta-trust li {
+    width: 100%;
     text-align: left;
   }
 
