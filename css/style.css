@@ -329,15 +329,7 @@ p + p {
 }
 
 .section-real-training::before {
-  content: "";
-  position: absolute;
-  top: -56px;
-  left: 0;
-  right: 0;
-  height: 88px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(233, 239, 244, 0.86) 58%, #e9eff4 100%);
-  pointer-events: none;
-  z-index: 1;
+  content: none;
 }
 
 .section-real-training-media {
@@ -349,12 +341,7 @@ p + p {
 }
 
 .section-real-training-media::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(180deg, rgba(233, 239, 244, 0.94) 0%, rgba(12, 18, 34, 0.04) 18%, rgba(12, 18, 34, 0.06) 54%, rgba(233, 239, 244, 0.26) 74%, rgba(233, 239, 244, 0.94) 100%);
-  pointer-events: none;
+  content: none;
 }
 
 .section-real-training-media img {
@@ -416,15 +403,7 @@ p + p {
 .section-mobility-fit::before,
 .section-size-guide::before,
 .section-final-amazon-cta::before {
-  content: "";
-  position: absolute;
-  top: -42px;
-  left: 0;
-  right: 0;
-  height: 72px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(248, 250, 255, 0.88) 62%, rgba(248, 250, 255, 1) 100%);
-  pointer-events: none;
-  z-index: 0;
+  content: none;
 }
 
 .section-impact-protection-layout {
@@ -509,8 +488,6 @@ p + p {
   margin: 0 auto;
   border-radius: 16px;
   box-shadow: 0 22px 56px rgba(17, 29, 58, 0.12);
-  mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
 
 .section-multisport-performance-copy {
@@ -572,8 +549,6 @@ p + p {
   width: min(100%, 620px);
   border-radius: 16px;
   box-shadow: 0 22px 56px rgba(17, 29, 58, 0.12);
-  mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
 
 .section-mobility-fit-copy h2 {
@@ -641,8 +616,6 @@ p + p {
   width: min(100%, 520px);
   border-radius: 16px;
   box-shadow: 0 22px 56px rgba(17, 29, 58, 0.12);
-  mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%, #000 92%, transparent 100%);
 }
 
 .section-size-guide-copy h2 {
@@ -2212,9 +2185,7 @@ p + p {
   }
 
   .section-real-training-media::after {
-    background:
-      linear-gradient(180deg, rgba(12, 18, 34, 0.04) 0%, rgba(12, 18, 34, 0.08) 30%, rgba(233, 239, 244, 0.18) 62%, rgba(233, 239, 244, 0.94) 100%),
-      linear-gradient(90deg, rgba(233, 239, 244, 0.5) 0%, rgba(233, 239, 244, 0.08) 42%, rgba(233, 239, 244, 0.24) 100%);
+    content: none;
   }
 
   .section-real-training-media img {
@@ -2222,13 +2193,15 @@ p + p {
   }
 
   .section-real-training-content {
-    margin-top: -180px;
+    margin-top: -72px;
     padding: 0 0 0;
   }
 
   .section-real-training-copy {
     width: min(780px, 72vw);
-    padding: 38px 44px 0;
+    padding: 46px 44px 0;
+    background: rgba(233, 239, 244, 0.94);
+    border-radius: 28px 28px 0 0;
   }
 
   .section-real-training-copy p {
