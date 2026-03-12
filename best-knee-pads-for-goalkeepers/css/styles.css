@@ -214,12 +214,22 @@ a {
   background: var(--surface);
   border: 1px solid var(--stroke);
   border-radius: 14px;
-  padding: 1rem 1rem 0.2rem;
+  padding: 1rem;
   margin-bottom: 0.9rem;
 }
 
 .faq-item p {
-  margin-bottom: 0.8rem;
+  margin: 0.8rem 0 0.2rem;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.faq-item summary::marker {
+  color: var(--primary);
 }
 
 .cta {
