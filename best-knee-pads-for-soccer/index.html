@@ -118,6 +118,39 @@
         font-weight: 700;
         background: #f7f8fa;
       }
+
+      .types-examples-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+      }
+
+      .types-example-card {
+        background: #ffffff;
+        border: 1px solid #dbe1ea;
+        border-radius: 14px;
+        padding: 0.9rem;
+      }
+
+      .types-example-card h3 {
+        margin-top: 0.8rem;
+      }
+
+      .types-example-card p {
+        margin-bottom: 0;
+      }
+
+      .types-highlight {
+        margin-top: 0.7rem;
+        font-weight: 700;
+        color: #142033;
+      }
+
+      @media (max-width: 900px) {
+        .types-examples-grid {
+          grid-template-columns: 1fr;
+        }
+      }
     </style>
   </head>
   <body>
@@ -166,6 +199,45 @@
           <p>
             A balanced design combines targeted cushioning with natural mobility. This modern approach is built for players who need both impact support and speed, especially when training rhythm and movement quality matter.
           </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="types-examples-title">
+        <div class="container">
+          <h2 id="types-examples-title">Real Examples of Knee Pad Types</h2>
+          <div class="types-examples-grid">
+            <article class="types-example-card">
+              <img
+                src="../best-knee-pads-for-goalkeepers/images/sportida-s6764-indoor-soccer-goalkeeper-knee-pads.png"
+                alt="soccer knee pads with bulkier padded profile"
+                loading="lazy"
+                class="content-image"
+              />
+              <h3>Bulky Knee Pads</h3>
+              <p>High-impact protection with thick padding, but can restrict movement during fast-paced soccer play.</p>
+            </article>
+            <article class="types-example-card">
+              <img
+                src="../best-knee-pads-for-goalkeepers/images/1-sportida-s6764-womens-knee-pads-indoor-court-training.png"
+                alt="lightweight soccer knee sleeve style protection"
+                loading="lazy"
+                class="content-image"
+              />
+              <h3>Lightweight Compression Sleeves</h3>
+              <p>Flexible and lightweight, but often lack enough protection for repeated ground contact.</p>
+            </article>
+            <article class="types-example-card">
+              <img
+                src="../best-knee-pads-for-goalkeepers/images/sportida-s6764-goalkeeper-diving-save-hero.webp"
+                alt="balanced soccer knee protection for training and movement"
+                loading="lazy"
+                class="content-image"
+              />
+              <h3>Balanced Knee Protection</h3>
+              <p>Targeted protection with natural mobility, designed for real training and dynamic movement.</p>
+              <p class="types-highlight">Protection Where You Need It - Without Bulk</p>
+            </article>
+          </div>
         </div>
       </section>
 
